@@ -13,8 +13,16 @@ body {
   background: radial-gradient(circle at 20% 10%, #1e4d3a 0, transparent 38%), #10231e;
 }
 
-.page-shell { width: min(1080px, 100% - 40px); margin: 0 auto; padding: 80px 0; }
+.page-shell { width: min(1080px, 100% - 40px); margin: 0 auto; padding: 60px 0; }
+.hero-card { padding: clamp(32px, 7vw, 80px); border: 1px solid rgba(244,241,232,.18); border-radius: 28px; background: linear-gradient(135deg, rgba(33,83,61,.92), rgba(16,35,30,.88)); }
 .eyebrow { color: #b6c9b5; font-size: 12px; letter-spacing: .14em; }
 h1 { font-size: clamp(56px, 12vw, 142px); line-height: .9; letter-spacing: -.08em; }
 h1 span { color: #d5f36e; }
 .lead { color: #d3dfd2; font-size: 22px; }
+.status-panel { display: flex; gap: 16px; align-items: center; max-width: 380px; margin-top: 48px; padding: 18px 20px; border-radius: 15px; background: rgba(4,20,14,.35); }
+.status-dot { width: 12px; height: 12px; flex: 0 0 auto; border-radius: 50%; background: #d5f36e; box-shadow: 0 0 0 6px rgba(213,243,110,.12); }
+.status-dot.offline { background: #ff8c69; box-shadow: 0 0 0 6px rgba(255,140,105,.12); }
+.status-label, .status-value, .status-time { margin: 0; }
+.status-label { color: #b6c9b5; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; }
+.status-value { margin-top: 4px; font-size: 18px; font-weight: 700; }
+.status-time { margin-top: 3px; color: #9bb09c; font-size: 12px; }
